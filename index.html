@@ -25,6 +25,7 @@
 		var data = {
 			coins: 0,
 			workers: 0,
+			clickmulti: 1,
 		};
 		/** everything that is function goes here */
 		var game = {
@@ -55,7 +56,7 @@
 			},
 
 			getCoin() {
-				data.coins++;
+				data.coins = data.coins * data.clickmulti;
 				game.updateDisplay();
 			},
 
